@@ -7,8 +7,8 @@
 #  gcd = greatest_common_divisor - наибольший общий делитель
 #  scm( a ,   b ) = a ⋅ b : (a, b)=a·b:gcd( a ,   b )
 
-#import math
-#print(math.gcd(28, 64))
+# import math
+# print(math.gcd(28, 64))
 
 # gcd:
 try:
@@ -16,4 +16,5 @@ try:
 except ImportError:
     from fractions import gcd
 from functools import reduce
+
 print(reduce(gcd, [36, 12, 144, 18]))
